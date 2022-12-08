@@ -1,5 +1,5 @@
 {
-  "name": "@material-ui/pickers",
+  "name": "@kathgironpe/material-ui-pickers",
   "version": "2.0.0",
   "description": "Material-ui pickers root package",
   "main": "index.js",
@@ -7,15 +7,18 @@
     "doc": "docs",
     "lib": "lib"
   },
-  "private": true,
   "workspaces": [
     "lib",
     "docs"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "start": "yarn dev",
     "dev": "yarn workspace docs dev",
-    "release": "yarn workspace @material-ui/pickers release && git push && git push --tags",
+    "release": "yarn workspace @kathgironpe/material-ui-pickers release && git push && git push --tags",
     "e2e:open": "cypress open",
     "e2e:run": "cypress run",
     "docgen": "node docs/scripts/docgen.js",

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { createMuiTheme } from '@material-ui/core';
+import { createTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
-import { DateTimePicker } from '@material-ui/pickers';
+import { DateTimePicker } from '@kathgironpe/material-ui-pickers';
 
-const defaultMaterialTheme = createMuiTheme({
+const defaultMaterialTheme = createTheme({
   spacing: 2,
 });
 

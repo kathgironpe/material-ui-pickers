@@ -45,8 +45,8 @@ export const DateTimePickerToolbar: React.FC<ToolbarComponentProps> = ({
   return (
     <>
       <PickerToolbar isLandscape={false} className={classes.toolbar}>
-        <Grid container justify="center" wrap="nowrap">
-          <Grid item container xs={5} justify="flex-start" direction="column">
+        <Grid container justifyContent="center" wrap="nowrap">
+          <Grid item container xs={5} justifyContent="flex-start" direction="column">
             <div>
               <ToolbarButton
                 variant="subtitle1"
@@ -69,7 +69,7 @@ export const DateTimePickerToolbar: React.FC<ToolbarComponentProps> = ({
             item
             container
             xs={6}
-            justify="center"
+            justifyContent="center"
             alignItems="flex-end"
             direction={rtl ? 'row-reverse' : 'row'}
           >
@@ -91,7 +91,7 @@ export const DateTimePickerToolbar: React.FC<ToolbarComponentProps> = ({
           </Grid>
 
           {ampm && (
-            <Grid item container xs={1} direction="column" justify="flex-end">
+            <Grid item container xs={1} direction="column" justifyContent="flex-end">
               <ToolbarButton
                 variant="subtitle1"
                 selected={meridiemMode === 'am'}

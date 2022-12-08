@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Badge } from '@material-ui/core';
-import { DatePicker } from '@material-ui/pickers';
+import { DatePicker } from '@kathgironpe/material-ui-pickers';
 import { makeJSDateObject } from '../../../utils/helpers';
 
 function getRandomNumber(min, max) {

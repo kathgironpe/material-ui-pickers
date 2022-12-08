@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React, { useState } from 'react';
 import lightBlue from '@material-ui/core/colors/lightBlue';
-import { DatePicker } from '@material-ui/pickers';
-import { createMuiTheme } from '@material-ui/core';
+import { DatePicker } from '@kathgironpe/material-ui-pickers';
+import { createTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 
-const materialTheme = createMuiTheme({
+const materialTheme = createTheme({
   overrides: {
     MuiPickersToolbar: {
       toolbar: {

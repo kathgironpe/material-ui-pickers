@@ -107,8 +107,8 @@ const Landing = () => {
       />
 
       <Toolbar color="primary" className={classes.appToolbar}>
-        <Grid container justify="space-between" className={classes.landing}>
-          <Grid item container justify="center" md={4} xs={12}>
+        <Grid container justifyContent="space-between" className={classes.landing}>
+          <Grid item container justifyContent="center" md={4} xs={12}>
             <Paper elevation={8} className={classes.logoContainer}>
               <div className={classes.logo}>
                 <Logo />
@@ -145,7 +145,7 @@ const Landing = () => {
           </Grid>
         </Grid>
 
-        <Grid container wrap="wrap" justify="center" className={classes.papersContainer}>
+        <Grid container wrap="wrap" justifyContent="center" className={classes.papersContainer}>
           <Grid item className={classes.paper} md={4} sm={6} xs={12}>
             <LandingProperty
               icon={Code}
@@ -176,12 +176,12 @@ const Landing = () => {
         <KawaiiIcon className={classes.kawaiiIcon} />
 
         <Typography gutterBottom variant="h4" align="center">
-          Support @material-ui/pickers
+          Support @kathgironpe/material-ui-pickers
         </Typography>
 
         <Typography gutterBottom align="center">
-          @material-ui/pickers is a MIT licensed open source project. We are intent on code quality
-          and project maintain. You can support this project as a part of material-ui's{' '}
+          @kathgironpe/material-ui-pickers is a MIT licensed open source project. We are intent on
+          code quality and project maintain. You can support this project as a part of material-ui's{' '}
           <a href="https://opencollective.com/material-ui">open collective</a>. Or support this
           project directly via <a href="https://www.patreon.com/user?u=9897423"> Patreon </a>
         </Typography>

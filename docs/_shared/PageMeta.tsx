@@ -10,8 +10,8 @@ interface PageMetaProps extends WithRouterProps {
 
 export function PageMeta({ title, component, router, description }: PageMetaProps) {
   if (component) {
-    title = `${component} - @material-ui/pickers component`;
-    description = `${component} usage examples and API of @material-ui/pickers`;
+    title = `${component} - @kathgironpe/material-ui-pickers component`;
+    description = `${component} usage examples and API of @kathgironpe/material-ui-pickers`;
   }
 
   if (!description) {

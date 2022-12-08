@@ -7,9 +7,9 @@ import { SnackbarProvider } from 'notistack';
 import { setPrismTheme } from '../utils/prism';
 import { PageContext } from '../utils/getPageContext';
 import { UtilsContext } from '../_shared/UtilsServiceContext';
-import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { MuiPickersUtilsProvider } from '@kathgironpe/material-ui-pickers';
 import { NotificationManager } from 'utils/NotificationManager';
-import { Theme, createMuiTheme, CssBaseline } from '@material-ui/core';
+import { Theme, createTheme, CssBaseline } from '@material-ui/core';
 import { ThemeProvider, jssPreset, StylesProvider } from '@material-ui/styles';
 import { createUtilsService, UtilsLib, utilsMap } from '../utils/utilsService';
 
@@ -22,7 +22,7 @@ export const ThemeContext = React.createContext<ThemeType>('light');
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 const createCustomMuiTheme = (theme: ThemeType, direction: Theme['direction']) => {
-  return createMuiTheme({
+  return createTheme({
     direction,
     palette: {
       primary: {
